@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageProjectUrl>https://github.com/paulem/nlog-layouts-clef</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/paulem/nlog-layouts-clef</RepositoryUrl>
+        <PackageTags>seq nlog clef json</PackageTags>
+        <Authors>Pavel Mikhaylov</Authors>
+        <Description>An NLog layout that writes JSON in Compact Log Event Format (CLEF) that is compatible with Seq. Based on NLog.Targets.Seq code.</Description>
+        <TargetFrameworks>net6.0;netstandard2.0</TargetFrameworks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NLog" Version="5.1.4" />
+    </ItemGroup>
+
+</Project>
