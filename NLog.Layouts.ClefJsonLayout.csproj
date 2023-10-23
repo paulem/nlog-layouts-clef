@@ -6,11 +6,17 @@
         <PackageTags>seq nlog clef json</PackageTags>
         <Authors>Pavel Mikhaylov</Authors>
         <Description>An NLog layout that writes JSON in Compact Log Event Format (CLEF) that is compatible with Seq. Based on NLog.Targets.Seq code.</Description>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <TargetFrameworks>net6.0;netstandard2.0</TargetFrameworks>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="NLog" Version="5.1.4" />
+        <PackageReference Include="NLog" Version="5.1.4"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
 </Project>

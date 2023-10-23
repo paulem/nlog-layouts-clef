@@ -32,7 +32,7 @@ Then, use the `ClefJsonLayout` layout within the file target in your NLog config
 
 ### Attaching additional properties
 
-The `target` declaration in `NLog.config` can be expanded with additional properties:
+The `layout` declaration in `NLog.config` can be expanded with additional properties:
 
 ```xml
 <target xsi:type="File" name="file" fileName="log.json">
