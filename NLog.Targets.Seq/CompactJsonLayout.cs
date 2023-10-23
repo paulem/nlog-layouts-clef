@@ -17,8 +17,10 @@ using NLog.Config;
 
 namespace NLog.Layouts.ClefJsonLayout
 {
+    [Layout("ClefJsonLayout")]
+    [Layout("CompactJsonLayout")]
     [ThreadAgnostic]
-    class CompactJsonLayout : JsonLayout
+    public class CompactJsonLayout : JsonLayout
     {
         readonly JsonAttribute
             _timestampAttribute = new JsonAttribute("@t", new SimpleLayout("${date:format=o}")),
