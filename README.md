@@ -1,5 +1,8 @@
 # NLog.Layouts.ClefJsonLayout
 
+![Nuget](https://img.shields.io/nuget/v/NLog.Layouts.ClefJsonLayout)
+![Nuget](https://img.shields.io/nuget/dt/NLog.Layouts.ClefJsonLayout)
+
 An NLog layout that writes JSON in Compact Log Event Format [CLEF](http://clef-json.org) that is compatible with [Seq](https://datalust.co/seq).
 
 There are situations when it is not possible to send logs directly to Seq, for example, due to enterprise security policies. In this case, a Seq-compatible JSON log can be useful, which can be manually fed to Seq using [seqcli](https://github.com/datalust/seqcli) `ingest` command.
