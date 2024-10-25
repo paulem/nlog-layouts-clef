@@ -1,22 +1,31 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <Description>An NLog layout that writes JSON in Compact Log Event Format (CLEF) that is compatible with Seq. Based on NLog.Targets.Seq code.</Description>
+        <Authors>Datalust;Contributors;Pavel Mikhaylov</Authors>
+        <Version>1.0.1</Version>
+        <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <PackageTags>seq;nlog;clef;json</PackageTags>
         <PackageProjectUrl>https://github.com/paulem/nlog-layouts-clef</PackageProjectUrl>
         <RepositoryUrl>https://github.com/paulem/nlog-layouts-clef</RepositoryUrl>
-        <PackageTags>seq nlog clef json</PackageTags>
-        <Authors>Pavel Mikhaylov</Authors>
-        <Description>An NLog layout that writes JSON in Compact Log Event Format (CLEF) that is compatible with Seq. Based on NLog.Targets.Seq code.</Description>
         <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-        <TargetFrameworks>net6.0;netstandard2.0</TargetFrameworks>
+        <LangVersion>9.0</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="NLog" Version="5.1.4"/>
+        <None Include="README.md" Pack="true" PackagePath=""/>
     </ItemGroup>
 
     <ItemGroup>
-        <None Include="README.md" Pack="true" PackagePath="\"/>
+        <PackageReference Include="NLog" Version="5.2.5"/>
+    </ItemGroup>
+
+    <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+        <PackageReference Include="System.ValueTuple" Version="4.5.0"/>
+        <PackageReference Include="System.Net.Http" Version="4.3.4"/>
+        <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="8.0.0"/>
     </ItemGroup>
 
 </Project>
