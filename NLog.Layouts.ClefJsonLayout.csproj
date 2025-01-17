@@ -3,7 +3,7 @@
     <PropertyGroup>
         <Description>An NLog layout that writes JSON in Compact Log Event Format (CLEF) that is compatible with Seq. Based on NLog.Targets.Seq code.</Description>
         <Authors>Datalust;Contributors;Pavel Mikhaylov</Authors>
-        <Version>1.0.2</Version>
+        <Version>1.0.3</Version>
         <TargetFrameworks>netstandard2.0;net6.0;net8.0</TargetFrameworks>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <PackageTags>seq;nlog;clef;json</PackageTags>
